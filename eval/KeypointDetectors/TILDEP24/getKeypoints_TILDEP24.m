@@ -62,10 +62,10 @@ global sRoot;
     binary_res = cell(pyramid_level,1);
     if(brun_filter)
         input_color_image = img_info.image_color;
-        clear param;load([sRoot '/filters/' name_our_orig],'res');
+        clear param;load([sRoot './filters/' name_our_orig],'res');
         param = res.param;
         delta = res.delta; %backup old delta from previous res structure
-        res = load([sRoot '/filters/' name_our_approx]);
+        res = load([sRoot './filters/' name_our_approx]);
         %param = res.param;
         res.param = param;
         res.delta = delta;

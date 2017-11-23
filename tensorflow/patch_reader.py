@@ -6,6 +6,7 @@ import numpy as np
 import random
 import cv2
 from tqdm import tqdm
+from six.moves import xrange
 
 from scipy.spatial import distance
 

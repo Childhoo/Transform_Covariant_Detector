@@ -38,7 +38,7 @@ patches = patches_total(index+training_offset,:,:,:);
 patches(training_number+(1:test_number),:,:,:) = ...
 patches_total((end-test_number+1):end,:,:,:);
 
-parpool;
+% parpool;
 parfor i = 1:total_number
     I = patches(i,:,:,:);
     I = squeeze(I);
@@ -101,7 +101,7 @@ parfor i = 1:total_number
     crop_J = permute(crop_J,[3,1,2]);
     warped_im(i,:,:,:) = crop_J;
 end
-delete(gcp);
+% delete(gcp);
 
 total_im = im;
 total_warped_im = warped_im;

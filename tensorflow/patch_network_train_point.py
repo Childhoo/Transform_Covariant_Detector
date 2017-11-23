@@ -35,6 +35,7 @@ import scipy.io as sio
 import pickle
 from tqdm import tqdm
 from datetime import datetime
+from six.moves import xrange
 
 import argparse
 

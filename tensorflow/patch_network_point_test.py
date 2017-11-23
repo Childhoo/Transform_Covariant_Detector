@@ -118,7 +118,7 @@ batch_size = 128
 descriptor_dim = args.descriptor_dim
 
 print('Loading training stats:')
-file = open('../data/stats_%s.pkl'%stats_name, 'r')
+file = open('../data/stats_%s.pkl'%stats_name, 'rb')
 mean, std = pickle.load(file)
 print(mean)
 print(std)
